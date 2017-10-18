@@ -40,7 +40,7 @@ void stable ()
 	{
 		GetGyroscopeData->Get_X_Angular_Acceleration ();
 		BrushlessMotordata->TurnPower ();
-		vTaskDelay (200);
+		vTaskDelay (1000);
 	}
 }
 void Stable_Init ()

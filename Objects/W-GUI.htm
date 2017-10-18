@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\W-GUI.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\W-GUI.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Wed Oct 18 13:34:10 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Wed Oct 18 23:49:38 2017
 <BR><P>
 <H3>Maximum Stack Usage =        256 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -561,10 +561,10 @@ Global Symbols
 
 <P><STRONG><a name="[14b]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[45]"></a>AD</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, brushlessmotor.o(i.AD))
+<P><STRONG><a name="[45]"></a>AD</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, brushlessmotor.o(i.AD))
 <BR>[Address Reference Count : 1]<UL><LI> brushlessmotor.o(i.BrushlessMotor_SVPWM)
 </UL>
-<P><STRONG><a name="[44]"></a>AU</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, brushlessmotor.o(i.AU))
+<P><STRONG><a name="[44]"></a>AU</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, brushlessmotor.o(i.AU))
 <BR>[Address Reference Count : 1]<UL><LI> brushlessmotor.o(i.BrushlessMotor_SVPWM)
 </UL>
 <P><STRONG><a name="[7f]"></a>AddToDriverTree</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, sys_device.o(i.AddToDriverTree))
@@ -575,10 +575,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYS_AddtoDriverTree
 </UL>
 
-<P><STRONG><a name="[46]"></a>BD</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, brushlessmotor.o(i.BD))
+<P><STRONG><a name="[46]"></a>BD</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, brushlessmotor.o(i.BD))
 <BR>[Address Reference Count : 1]<UL><LI> brushlessmotor.o(i.BrushlessMotor_SVPWM)
 </UL>
-<P><STRONG><a name="[43]"></a>BU</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, brushlessmotor.o(i.BU))
+<P><STRONG><a name="[43]"></a>BU</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, brushlessmotor.o(i.BU))
 <BR>[Address Reference Count : 1]<UL><LI> brushlessmotor.o(i.BrushlessMotor_SVPWM)
 </UL>
 <P><STRONG><a name="[40]"></a>BrushlessMotor_Init</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, brushlessmotor.o(i.BrushlessMotor_Init))
@@ -622,10 +622,10 @@ Global Symbols
 <P><STRONG><a name="[3f]"></a>BrushlessMotor_Turn</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, brushlessmotor.o(i.BrushlessMotor_Turn))
 <BR>[Address Reference Count : 1]<UL><LI> brushlessmotor.o(i.BrushlessMotor_LoadInfo)
 </UL>
-<P><STRONG><a name="[47]"></a>CD</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, brushlessmotor.o(i.CD))
+<P><STRONG><a name="[47]"></a>CD</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, brushlessmotor.o(i.CD))
 <BR>[Address Reference Count : 1]<UL><LI> brushlessmotor.o(i.BrushlessMotor_SVPWM)
 </UL>
-<P><STRONG><a name="[42]"></a>CU</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, brushlessmotor.o(i.CU))
+<P><STRONG><a name="[42]"></a>CU</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, brushlessmotor.o(i.CU))
 <BR>[Address Reference Count : 1]<UL><LI> brushlessmotor.o(i.BrushlessMotor_SVPWM)
 </UL>
 <P><STRONG><a name="[a4]"></a>DMA_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_dma.o(i.DMA_Cmd))
@@ -790,7 +790,7 @@ Global Symbols
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Time1_Init
 </UL>
 
-<P><STRONG><a name="[c6]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
+<P><STRONG><a name="[c3]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Time1_Init
 </UL>
 
@@ -1163,35 +1163,27 @@ Global Symbols
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TFT_ILI9341_Address_set
 </UL>
 
-<P><STRONG><a name="[2b]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 182 bytes, Stack size 16 bytes, brushlessmotor.o(i.TIM1_UP_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = TIM1_UP_IRQHandler &rArr; BrushlessMotor_SVPWM &rArr; __aeabi_dmul
+<P><STRONG><a name="[2b]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 186 bytes, Stack size 8 bytes, brushlessmotor.o(i.TIM1_UP_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = TIM1_UP_IRQHandler &rArr; BrushlessMotor_SVPWM &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BrushlessMotor_SVPWM
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BrushlessMotor_SVPWM
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
 <P><STRONG><a name="[c5]"></a>TIM_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ClearFlag))
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Time1_Init
-<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_IRQHandler
 </UL>
 
 <P><STRONG><a name="[85]"></a>TIM_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_Cmd))
-<BR><BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_IRQHandler
-<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BrushlessMotor_Init
+<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BrushlessMotor_Init
 </UL>
 
-<P><STRONG><a name="[c3]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ITConfig))
+<P><STRONG><a name="[c6]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ITConfig))
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Time1_Init
-<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_IRQHandler
 </UL>
 
 <P><STRONG><a name="[c4]"></a>TIM_TimeBaseInit</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_TimeBaseInit))
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Time1_Init
-<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_IRQHandler
 </UL>
 
 <P><STRONG><a name="[83]"></a>Time1_Init</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, brushlessmotor.o(i.Time1_Init))
@@ -1200,9 +1192,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BrushlessMotor_Init
 </UL>
@@ -1345,7 +1337,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewTask
 </UL>
 
-<P><STRONG><a name="[52]"></a>stable</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stable.o(i.stable))
+<P><STRONG><a name="[52]"></a>stable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stable.o(i.stable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = stable &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
